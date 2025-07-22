@@ -1,21 +1,21 @@
 <h1 align="center">Hi 👋, I'm Parth</h1>
-<h3 align="center">A passionate AI and ML from India</h3>
+<h3 align="center">A passionate for AI and ML from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=parthraj1905&label=Profile%20views&color=0e75b6&style=flat" alt="parthraj1905" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=parthraj1905" alt="parthraj1905" /></a> </p>
 
-- 🔭 I’m currently working on **Data analysis**
+- 🔭 I’m currently working on **Data science**
 
-- 🌱 I’m currently learning **Data analysis and Data science.**
+- 🌱 I’m currently learning **Machine Learning Models.**
 
 - 🤝 I’m looking for help with **Machine Learning**
 
-- 💬 Ask me about **TensorFlow**
+- 💬 Ask me about **Sklearn**
 
 - 📫 How to reach me **parthrajsinhparmar19@gmail.com**
 
-- ⚡ Fun fact **I have too much knowledge in sports.**
+- ⚡ Fun fact **I have too much knowledge in football⚽️.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
