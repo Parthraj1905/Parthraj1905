@@ -1,22 +1,25 @@
-# GitHub Action for generating a contribution graph with a snake eating the contributions
 name: Generate Snake
 
 on:
-  # Run automatically every 6 hours
   schedule:
-    - cron: "0 */6 * * *" 
-  
-  # Allows to run this workflow manually from the Actions tab
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
   build:
+    # ====================================================================
+    # === THIS IS THE FIX ===
+    # This block grants the workflow the permissions it needs to push
+    # the new snake.svg file back to your repository.
+    # ====================================================================
+    permissions:
+      contents: write
+    # ====================================================================
+
     runs-on: ubuntu-latest
     steps:
-      # This first part checks out your repository
       - uses: actions/checkout@v3
 
-      # This second part generates the snake.svg file and puts it in a 'dist' directory
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -24,11 +27,6 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # ====================================================================
-      # === THIS IS THE CRUCIAL MISSING PART ===
-      # This third part takes the files from the 'dist' directory and pushes them 
-      # to a branch named 'output' so your README can find the image.
-      # ====================================================================
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
