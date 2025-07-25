@@ -5,7 +5,7 @@ on:
   # Run automatically every 6 hours
   schedule:
     - cron: "0 */6 * * *" 
-
+  
   # Allows to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -13,20 +13,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # This first part checks out your repository
       - uses: actions/checkout@v3
 
+      # This second part generates the snake.svg file and puts it in a 'dist' directory
       - uses: Platane/snk@v3
         with:
-          # Your GitHub username
           github_user_name: ${{ github.repository_owner }}
-
-          # The list of output files to be generated
-          # The path MUST be "dist/github-contribution-grid-snake.svg" for the crazy-max action to work
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # This step pushes the generated SVG to a new branch called "output"
+      # ====================================================================
+      # === THIS IS THE CRUCIAL MISSING PART ===
+      # This third part takes the files from the 'dist' directory and pushes them 
+      # to a branch named 'output' so your README can find the image.
+      # ====================================================================
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
