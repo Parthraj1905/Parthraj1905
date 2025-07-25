@@ -95,10 +95,6 @@ I'm a Computer Science undergraduate from Gujarat, India 🇮🇳, with a deep p
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=parthraj1905&theme=radical&bg_color=1c1919&color=e05397&line=e05397&point=ffffff&hide_border=true" alt="Activity Graph" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/parthraj1905/parthraj1905/output/github-contribution-grid-snake.svg" alt="snake" />
-</p>
-
 <details align="center">
 <summary>⚡ Fun Fact</summary>
 <p>
