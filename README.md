@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Parth</h1>
+<h1 align="center">Hi 👋, I'm</h1>
 <h3 align="center">A passionate for AI and ML from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=parthraj1905&label=Profile%20views&color=0e75b6&style=flat" alt="parthraj1905" /> </p>
